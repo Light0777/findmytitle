@@ -4,19 +4,19 @@ import { Sparkles, Search, TrendingUp, Zap, ArrowRight, CheckCircle } from "luci
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 via-white to-blue-50">
       {/* Navigation */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             <Sparkles className="w-6 h-6 text-blue-600" />
-            <span className="font-bold text-xl bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
+            <span className="font-bold text-xl bg-linear-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
               FindMyTitle
             </span>
           </div>
           <Link
             href="/dashboard"
-            className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-200 hover:scale-105"
+            className="bg-linear-to-r from-blue-600 to-indigo-600 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-200 hover:scale-105"
           >
             Get Started
           </Link>
@@ -26,11 +26,11 @@ export default function Home() {
       {/* Hero Section */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg">
+          <div className="inline-flex items-center gap-2 bg-linear-to-r from-blue-600 to-indigo-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-lg">
             <Zap className="w-4 h-4" />
             AI-Powered Title Generator
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold bg-linear-to-r from-slate-900 via-slate-800 to-slate-900 bg-clip-text text-transparent mb-6">
             Find the Perfect Title
             <br />
             for Your Content
@@ -41,7 +41,7 @@ export default function Home() {
           </p>
           <Link
             href="/dashboard"
-            className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-200 hover:scale-105 group"
+            className="inline-flex items-center gap-2 bg-linear-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-200 hover:scale-105 group"
           >
             Start Finding Titles
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -51,7 +51,7 @@ export default function Home() {
         {/* Features Section */}
         <div className="grid md:grid-cols-3 gap-8 mb-24">
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-200 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 bg-linear-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Search className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-slate-800 mb-2">Keyword Discovery</h3>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-200 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 bg-linear-to-br from-indigo-500 to-indigo-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <Sparkles className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-slate-800 mb-2">AI Title Generation</h3>
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
 
           <div className="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-200 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+            <div className="w-12 h-12 bg-linear-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
               <TrendingUp className="w-6 h-6 text-white" />
             </div>
             <h3 className="text-xl font-semibold text-slate-800 mb-2">SEO Optimization</h3>
@@ -88,7 +88,7 @@ export default function Home() {
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-blue-600">
+              <div className="w-16 h-16 bg-linear-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-blue-600">
                 1
               </div>
               <h3 className="font-semibold text-slate-800 mb-2">Enter Your Keyword</h3>
@@ -97,7 +97,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-blue-600">
+              <div className="w-16 h-16 bg-linear-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-blue-600">
                 2
               </div>
               <h3 className="font-semibold text-slate-800 mb-2">Get Suggestions</h3>
@@ -106,7 +106,7 @@ export default function Home() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-blue-600">
+              <div className="w-16 h-16 bg-linear-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-blue-600">
                 3
               </div>
               <h3 className="font-semibold text-slate-800 mb-2">Generate Titles</h3>
@@ -142,7 +142,7 @@ export default function Home() {
               ))}
             </div>
           </div>
-          <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+          <div className="bg-linear-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
             <div className="text-center">
               <div className="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm mb-4">
                 <Sparkles className="w-4 h-4 text-blue-600" />
@@ -156,7 +156,7 @@ export default function Home() {
               </p>
               <Link
                 href="/dashboard"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-200"
+                className="inline-flex items-center gap-2 bg-linear-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-200"
               >
                 Get Started Free
                 <ArrowRight className="w-4 h-4" />
