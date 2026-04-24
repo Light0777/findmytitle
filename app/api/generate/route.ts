@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-import { supabase } from "@/lib/supabase";
 
 export async function POST(req: Request) {
   try {
@@ -25,14 +24,10 @@ export async function POST(req: Request) {
       `Easy ${keyword} Wins for Beginners`
     ];
 
-    await supabase.from("generations").insert({
-      keyword,
-      results: titles
-    });
-
     return NextResponse.json({ titles });
 
   } catch (error) {
+    console.error("Error generating titles:", error);
     return NextResponse.json(
       { error: "Something went wrong" },
       { status: 500 }
