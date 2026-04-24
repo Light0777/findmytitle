@@ -2,17 +2,15 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://findmytitle.vercel.app'
-  
   return [
     {
-      url: baseUrl,
+      url: 'https://findmytitle.vercel.app',
       lastModified: new Date(),
       changeFrequency: 'daily',
-      priority: 1.0,
+      priority: 1,
     },
     {
-      url: `${baseUrl}/dashboard`,
+      url: 'https://findmytitle.vercel.app/dashboard',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
